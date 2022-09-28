@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-image: url("/images/bg-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    width: 60em;
+    margin: 0 auto;
+    gap: 3rem;
+}
+.databox-1 {
+    width: 30%;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 80px;
+}
+.fylo {
+    padding: 27px 27px 10px;
+}
+.files {
+    display: flex;
+}
+.foldericon {
+    padding: 8px;
+    margin: 10px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 15px;
+}
+.fileicon {
+    padding: 8px;
+    margin: 10px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+.uploadicon {
+    padding: 7px;
+    margin: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+.databox-2 {
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    width: 54%;
+    position: relative;
+    height: 116px;
+    border-radius: 20px;
+    padding: 0 20px;
+    color:  hsl(243, 100%, 93%);
+    font-size: 14px;
+    font-weight: 400;
+}
+.top {
+    padding: 10px 0 10px 0;
+}
+.top-p {
+    padding: 10px 0;
+}
+.whitebox {
+    padding: 13px 0;
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    right: 32px;
+    bottom: 89px;
+    border-radius: 10px;
+    text-align: center;
+}
+.whitebox::after{
+    content: "";
+    position: absolute;
+    border-right: 19px solid white;
+    border-top: 16px solid white;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    left: 105px;
+    top: 76%;
+}
+.center {
+    position: relative;
+    width: 67%;
+    background: linear-gradient(hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 20px;
+}
+hr.increment {
+    padding: 5px;
+    border-radius: 20px;
+    width: 456px;
+}
+.increment::after {
+    content: "";
+    border-style: solid;
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    color: white;
+    height: 4px;
+    border-radius: 40%;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.white-sp {
+    margin: 7px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+@media screen and (max-width: 375px) {
+    body{
+        background-image: url("/images/bg-mobile.png");
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: initial;
+    }
+    .databox-1 {
+        width: 96%;
+        background-color: hsl(228, 56%, 26%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 80px;
+        margin: 20px 0;
+    }
+    .databox-2 {
+        background-color: hsl(228, 56%, 26%);
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+        width: 96%;
+        position: relative;
+        height: 108px;
+        border-radius: 20px;
+        padding: 0 20px;
+        color: hsl(243, 100%, 93%);
+        font-size: 14px;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+    hr.increment {
+        padding: 4px;
+        border-radius: 20px;
+        width: 268px;
+    }
+    .whitebox {
+        position: absolute;
+        right: 73px;
+        top: 90px;
+        width: 58%;
+        padding: 0;
+    }
+    .whitebox::after{
+        content: none;
+    }
+    .white-p {
+        padding: 10px 0;
+        background-color: white;
+        width: 96%;
+        border-radius: 5px;
+    }  
+}
